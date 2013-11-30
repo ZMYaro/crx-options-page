@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Replace this with your extension's title. -->
+		<title>Options - Your Extension</title>
+		<link rel="stylesheet" type="text/css" href="styles/options.css" />
+		<script type="text/javascript" src="scripts/options.js"></script>
+	</head>
+	<body>
+		<nav class="sideBar">
+			<h1>Chrome</h1>
+			<ul>
+				<li><a href="chrome://history" target="_blank">History</a></li>
+				<li>
+					<a href="chrome://extensions">Extensions</a>
+					<ul>
+						<!-- Replace this with your extension's title. -->
+						<li>Your Extension</li>
+					</ul>
+				</li>
+				<li><a href="chrome://settings">Settings</a></li>
+				<li><a href="chrome://help">Help</a></li>
+			</ul>
+		</nav>
+		<header>
+			<!-- Replace this with your extension's title. -->
+			<h1>Your Extension</h1>
+		</header>
+		<!-- Replace everything below this point with your extension's options. -->
+		<section>
+			<h3>Multiple choice</h3>
+			<p>This is a multiple choice question using radio buttons:</p>
+			<label for="radio1">
+				<input type="radio" name="radio" id="radio1" checked="checked" />
+				First choice
+			</label>
+			<br />
+			<label for="radio2">
+				<input type="radio" name="radio" id="radio2" />
+				Second choice
+			</label>
+			<br />
+			<label for="radio3">
+				<input type="radio" name="radio" id="radio3" />
+				Third choice
+			</label>
+			<br />
+			<label for="rad4o4">
+				<input type="radio" name="radio" id="radio4" />
+				Fourth choice
+			</label>
+		</section>
+		<section>
+			<h3>Checkable setting</h3>
+			<p>Do you want to check this checkbox?</p>
+			<label for="checkbox">
+				<input type="checkbox" id="checkbox" />
+				Yes, I would like to check the box.
+			</label>
+		</section>
+		<section>
+			<h3>Drop-down menu</h3>
+			<p>You may select an option from the list below.</p>
+			<select id="dropDownMenu">
+				<option>First option</option>
+				<option>Second option</option>
+				<option>Third option</option>
+			</select>
+		</section>
+	</body>
+</html>
