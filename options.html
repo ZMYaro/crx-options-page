@@ -4,7 +4,8 @@
 		<!-- Replace this with your extension's title. -->
 		<title>Options - Your Extension</title>
 		<link rel="stylesheet" type="text/css" href="styles/options.css" />
-		<script type="text/javascript" src="scripts/options.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/options-widgets.css" />
+		<script type="text/javascript" src="scripts/options-setup.js"></script>
 	</head>
 	<body>
 		<nav class="sideBar">
@@ -67,5 +68,26 @@
 				<option>Third option</option>
 			</select>
 		</section>
+		<section>
+			<h3>Pop-up pages</h3>
+			<button onclick="document.getElementById('overlayDetails').show();">Read more</button>
+		</section>
+		<div class="overlay transparent hidden">
+			<div class="page hidden" id="overlayDetails">
+				<h1>Pop-up pages</h1>
+				<button class="closeButton"></button>
+				<div class="content">
+					<p>
+						An pop-up page should have a class of <code>page</code>, and it should be inside an element of class <code>overlay</code>.  The <code>.page</code> is the pane itself, and the <code>.overlay</code> is the white background that covers the main page and, when clicked, hides the overlay pane.
+					</p>
+					<p>
+						To show a pop-up page, call [page element]<code>.show()</code>.  To hide it, call [page element]<code>.fadeOut()</code>.  You can also use [page element]<code>.hide()</code> to hide it instantly.
+					</p>
+					<p>
+						If you do not intend to use pop-up pages or close buttons, you can exclude the options-widgets.css file from your project.
+					</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
