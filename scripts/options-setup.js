@@ -17,6 +17,12 @@
 		var osStyle = document.createElement('link');
 		osStyle.rel = 'stylesheet';
 		osStyle.type = 'text/css';
+		
+		// Change “Chrome” label to “Chromium” on Chromium.
+		if(navigator.userAgent.indexOf('Chromium') !== -1) {
+			document.querySelector('.sideBar h1').innerHTML = 'Chromium';
+		}
+		
 		if(navigator.userAgent.indexOf('Windows') !== -1) {
 			osStyle.href = 'styles/options-win.css';
 		} else if(navigator.userAgent.indexOf('Macintosh') !== -1) {
@@ -24,7 +30,7 @@
 		} else if(navigator.userAgent.indexOf('CrOS') !== -1) {
 			osStyle.href = 'styles/options-cros.css';
 			// Change the “Chrome” label to “Chrome OS” on CrOS.
-			document.querySelector('.sideBar h1').innerText = 'Chrome OS';
+			document.querySelector('.sideBar h1').innerHTML += ' OS';
 		} else {
 			osStyle.href = 'styles/options-linux.css';
 		}
