@@ -1,3 +1,11 @@
+/* Styles for the options page on Windows
+ * Part of the CRX Options Page boilerplate
+ *
+ * Copyright 2013-2015 Zachary Yaro
+ * Released under the MIT license
+ * https://raw.github.com/zmyaro/crx-options-page/master/LICENSE.txt
+ */
+
 body {
 	font-family: 'Segoe UI', Tahoma, sans-serif;
 }

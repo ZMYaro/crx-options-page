@@ -1,3 +1,11 @@
+/* Script for setting up the options page
+ * Part of the CRX Options Page boilerplate
+ *
+ * Copyright 2013-2015 Zachary Yaro
+ * Released under the MIT license
+ * https://raw.github.com/zmyaro/crx-options-page/master/LICENSE.txt
+ */
+
 (function() {
 	/** Pop-up fade-in/-out delay */
 	var FADE_DURATION = 250;
