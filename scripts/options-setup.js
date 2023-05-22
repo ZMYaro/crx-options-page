@@ -40,15 +40,11 @@
 	 * Change any chrome:// link to use the goToPage function
 	 */
 	function setUpChromeLinks() {
-		// Get the list of <a>s.
-		var links = document.getElementsByTagName('a');
-		// For each link,
+		// Get the list of <a>s whose links begin with “chrome://”.
+		var links = document.querySelectorAll('a[href^=\"chrome://');
 		for(var i = 0; i < links.length; i++) {
-			// if the URL begins with “chrome://”,
-			if(links[i].href.indexOf('chrome://') === 0) {
-				// tell it to goToPage onclick.
-				links[i].onclick = goToPage;
-			}
+			// Tell each Chrome page link to use the override function.
+			links[i].onclick = goToPage;
 		}
 	}
 	/**
